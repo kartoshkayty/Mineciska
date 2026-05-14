@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "name": "mineciska",
+  "id": "mineciska",
+  "version": "0.3.4",
+  "description": "Utility client with only the utilities. Forked from Meteor Client by Moxvallix. Meteor Client by MineGame159, squidoodly and seasnail",
+  "authors": [
+    "MineGame159",
+    "squidoodly",
+    "seasnail",
+    "Moxvallix",
+    "kartoshka"
+  ],
+  "contact": {
+    "homepage": "https://github.com/optipack/asteroid",
+    "issues": "https://github.com/optipack/asteroid/issues",
+    "sources": "https://github.com/optipack/asteroid"
+  },
+  "license": "GPL-3.0",
+  "icon": "assets/mineciska/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "meteordevelopment.meteorclient.MeteorClient"
+    ],
+    "modmenu": [
+      "meteordevelopment.meteorclient.ModMenuIntegration"
+    ]
+  },
+  "mixins": [
+    "meteor-client.mixins.json",
+    "meteor-client-indigo.mixins.json",
+    "meteor-client-sodium.mixins.json",
+    "meteor-client-lithium.mixins.json",
+    "meteor-client-viafabricplus.mixins.json"
+  ],
+  "accessWidener": "meteor-client.accesswidener",
+  "custom": {
+    "mineciska:build_number": "",
+    "mineciska:color": "196,46,0",
+    "mineciska:commit": "",
+    "modmenu": {
+      "links": {
+        "modmenu.wiki": "https://wiki.minecis.net/",
+        "modmenu.modrinth": "https://modrinth.com/mod/asteroid",
+        "modmenu.discord": "https://discord.gg/minecis"
+      }
+    }
+  },
+  "depends": {
+    "java": ">=21",
+    "minecraft": ["1.21.11"],
+    "fabricloader": ">=0.18.2"
+  },
+  "breaks": {
+    "optifabric": "*",
+    "feather": "*",
+    "origins": "*",
+    "sodium": "<0.7.0",
+    "morechathistory": "*"
+  },
+  "provides": ["meteor-client"]
+}
